@@ -1,0 +1,9 @@
+export interface DashboardStatistics {
+  totalStudents: number;
+  totalTeachers: number;
+  totalParents: number;
+  totalClasses: number;
+  totalSubjects: number;
+  totalFeesCollected: number;
+  totalPendingFees: number;
+}

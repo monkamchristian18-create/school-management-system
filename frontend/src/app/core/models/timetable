@@ -1,0 +1,25 @@
+export type DayOfWeek =
+  | 'Monday'
+  | 'Tuesday'
+  | 'Wednesday'
+  | 'Thursday'
+  | 'Friday'
+  | 'Saturday';
+
+export interface Timetable {
+  id: number;
+
+  classId: number;
+
+  subjectId: number;
+
+  teacherId: number;
+
+  day: DayOfWeek;
+
+  startTime: string;
+
+  endTime: string;
+
+  room: string;
+}

@@ -1,0 +1,13 @@
+export interface Exam {
+  id: number;
+
+  title: string;
+
+  subjectId: number;
+
+  classId: number;
+
+  examDate: string;
+
+  totalMarks: number;
+}

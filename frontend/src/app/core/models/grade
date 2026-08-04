@@ -1,0 +1,13 @@
+export interface Grade {
+  id: number;
+
+  examId: number;
+
+  studentId: number;
+
+  marksObtained: number;
+
+  grade: string;
+
+  remark?: string;
+}

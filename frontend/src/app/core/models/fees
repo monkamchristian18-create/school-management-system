@@ -1,0 +1,23 @@
+
+export type PaymentStatus =
+  | 'Pending'
+  | 'Partial'
+  | 'Paid';
+
+export interface Fee {
+  id: number;
+
+  studentId: number;
+
+  academicYear: string;
+
+  amount: number;
+
+  amountPaid: number;
+
+  balance: number;
+
+  paymentStatus: PaymentStatus;
+
+  paymentDate?: string | null;
+}

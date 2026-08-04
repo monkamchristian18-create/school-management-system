@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "chart.js": "^4.5.1",
+    "file-saver": "^2.0.5",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "ngx-toastr": "^20.0.5",
+    "sweetalert2": "^11.26.25",
+    "xlsx": "^0.18.5"
+  }
+}

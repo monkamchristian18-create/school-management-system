@@ -1,0 +1,19 @@
+export type AttendanceStatus =
+  | 'Present'
+  | 'Absent'
+  | 'Late'
+  | 'Excused';
+
+export interface Attendance {
+  id: number;
+
+  studentId: number;
+
+  classId: number;
+
+  date: string;
+
+  status: AttendanceStatus;
+
+  remarks?: string;
+}
