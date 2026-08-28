@@ -42,16 +42,13 @@ export class ParentService {
     parent: Parent
   ): Observable<ApiResponse<Parent>> {
 
-    return this.api.put<Parent>(
-      `${this.endpoint}/${id}`,
-      parent
-    );
+    return this.api.put<T>(url, body)  
   }
 
   /**
    * Delete parent
    */
   delete(id: number): Observable<ApiResponse<void>> {
-    return this.api.delete<void>(`${this.endpoint}/${id}`);
+    return this.api.delete<void>(url)
   }
 }
