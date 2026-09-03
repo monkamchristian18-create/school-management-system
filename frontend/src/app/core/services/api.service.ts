@@ -60,7 +60,12 @@ export class ApiService {
     id: number | string,
     body: any
   ): Observable<T> {
-    return this.http.put<T>(endpoint: string, ???, body: any) 
+    return this.http.put<T>(
+      '${this.endpoint}/${id}',
+      {},
+      {}
+    
+    );
   }
 
   /**
@@ -84,7 +89,10 @@ export class ApiService {
     endpoint: string,
     id: number | string
   ): Observable<T> {
-    return this.http.delete<T>(endpoint: string, ???, id: number | string) 
+   return this.http.delete<T>(
+      '${this.endpoint}/${id}',
+      {}
+    );
   }
 
   /**

@@ -16,7 +16,7 @@ import { NotificationService } from '../../../core/services/notification.service
   template: `
     <div class="toast-container">
       <div
-        *ngFor="let notification of notificationService.notifications$ | async"
+        *ngFor="let notification of notificationService.notifications | async"
         class="toast toast-{{ notification.type }}"
       >
         <span>{{ notification.message }}</span>
